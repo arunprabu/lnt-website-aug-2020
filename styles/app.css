@@ -1,0 +1,20 @@
+/* external css -- global css -app- wide css*/
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-text{ /*class selector*/
+    color: yellow;
+    background-color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.corporate-wrapper{
+    float: left;
+    width:50%; /* todo:  learn about units such as px, vh, % of css */
+    text-align: center;
+}
+.clear{
+    clear: both;
+}

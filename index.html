@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | L & T Corporate Website!</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./styles/app.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h2{ /* element selector */
+           color: green;
+           text-align: center; 
+        }
+        #para1, #para2{ /* id selector */
+            text-align: center;
+            color: red;
+            font-family: 'Segoe UI', sans-serif;
+        }
+       
+        #corporate, #builders{
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,27 +38,30 @@
     </header>
     <main>
         <hr>
-        <h1>Welcome to L & T Corporate Website!</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-        <section>
-            <h2>CORPORATE OVERVIEW</h2>
+        <!-- inline css -->
+        <h1 style="color: darkturquoise; text-align: center;">Welcome to L & T Corporate Website!</h1>
+        <p class="main-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <section class="corporate-wrapper">
+            <h2 id="corporate">
+                CORPORATE OVERVIEW
+            </h2>
             <img src="./images/profile_home.jpg" alt="Profile Home">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Odio fuga saepe tempore mollitia sequi facere natus est pariatur,
                 culpa autem doloribus molestiae consectetur dolor, 
                 facilis ipsa omnis perferendis eius commodi?</p>
         </section>
 
-        <section>
-            <h2>L&T CONSTRUCTION - BUILDERS TO NATIONS</h2>
+        <section class="corporate-wrapper">
+            <h2 id="builders">L&T CONSTRUCTION - BUILDERS TO NATIONS</h2>
             <img src="./images/Builders-to-the-nation.jpg" alt="Builders to Nations">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Odio fuga saepe tempore mollitia sequi facere natus est pariatur,
                 culpa autem doloribus molestiae consectetur dolor, 
                 facilis ipsa omnis perferendis eius commodi?</p>
         </section>
     </main>
-    <footer>
+    <footer class="clear">
         <hr>
         <p>Copyright 2020 | Made during Angular Training!</p>
     </footer>

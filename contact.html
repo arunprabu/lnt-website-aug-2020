@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | L & T Corporate Website!</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./styles/app.css">
+    <style>
+        [type='text']{ 
+            background-color: lavender;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,13 +30,13 @@
         
         <form>
             <label>Enter Name: </label>
-            <input type="text">
+            <input type="text" required>
             <br>
             <label>Enter EMail: </label>
-            <input type="email">
+            <input type="email" required> <!-- html 5-->
             <br>
             <label>Query: </label>
-            <textarea></textarea>
+            <textarea required></textarea>
             <br>
             <button type="submit">Send Query</button>
             <button type="reset">Clear Form</button>
