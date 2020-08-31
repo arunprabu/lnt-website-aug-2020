@@ -1,5 +1,12 @@
 // external js
 
+var learnMoreBtn = document.getElementById("learnMoreBtn");
+learnMoreBtn.onclick = () => {
+  alert('test');
+}
+
+
+
 function submitHandler(evt){
     console.log(evt);
     // stop page refresh
